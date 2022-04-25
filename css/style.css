@@ -211,6 +211,7 @@
   #bio-container p {
     max-width: 60%;
     margin: 10px auto;
+    justify-content: center;
   }
 
   #about-container {
