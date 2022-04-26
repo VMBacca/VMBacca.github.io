@@ -16,6 +16,7 @@
   --bio-bg-color: #1e2a3a;
   --bio-border-color: #293544;
   --about-bg-color: #111821;
+  --english-color: rgb(177, 177, 177);
 }
 
 /* General */
@@ -94,9 +95,25 @@
   font-weight: bold;
 }
 
-.description {
-  max-width: 75%;
+#title-english {
+  color: var(--english-color);
+  font-size: 24px;
+  margin-bottom: 15px;
+  font-weight: bold;
+  font-style: italic;
+}
+
+#description {
+  max-width: 90%;
   margin-bottom: 10px;
+}
+
+#description-english {
+  color: var(--english-color);
+  max-width: 90%;
+  margin-bottom: 10px;
+  font-style: italic;
+  font-size: 16px;
 }
 
 #btn-projects {
@@ -134,6 +151,12 @@
   padding-top: 20px;
   margin-bottom: 20px;
   font-size: 32px;
+}
+
+#skills-section-title-english {
+  color: var(--english-color);
+  margin-bottom: 20px;
+  font-size: 24px;
 }
 
 #skills-container {
@@ -187,8 +210,15 @@
   margin-bottom: 20px;
 }
 
-#bio-container #welcome-text {
+#bio-container #welcome-text,
+#welcome-english {
   font-weight: bold;
+}
+
+#welcome-english,
+.english {
+  color: var(--english-color);
+  font-style: italic;
 }
 
 /* Mobile */
@@ -211,7 +241,6 @@
   #bio-container p {
     max-width: 60%;
     margin: 10px auto;
-    justify-content: center;
   }
 
   #about-container {
